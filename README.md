@@ -2,12 +2,13 @@
 ## Data
 ### All_categories.mat
 The data file is a 300x5 matrix contains 1500 news from 5 different category. The columns are business, entertainment, politics, sports and tech respectively. 
-
 <img width="639" alt="all_cat" src="https://user-images.githubusercontent.com/55101879/80283552-63039280-86e6-11ea-8b3b-15aa3f47e801.png">
+
   #### Train Data
     * Contains total number of 1200 news. 240 from each category
   #### Test Data
     * Contains total number of 300 news. 60 from each category.
+    
 ### Words_list.mat
 The word list contains most frequent 10 words in each category total of 50 words.
 
