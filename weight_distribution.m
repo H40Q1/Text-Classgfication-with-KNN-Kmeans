@@ -32,5 +32,5 @@ end
 All_counted = [business entertainment politics sports tech];
 %% Adjust the weights
 bag = join(bag);
-weight_distribution = tfidf(bag);
-weight_distribution = full(weight_distribution);
+weight_distr = tfidf(bag);
+weight_distr = full(weight_distribution);
