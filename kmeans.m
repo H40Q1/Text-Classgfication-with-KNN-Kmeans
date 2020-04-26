@@ -1,6 +1,7 @@
-function [c,labels] = kmeans(X, T, Ytrain)
+function [c,labels] = kmeans(X, Ytrain)
 %  Ytrain is 1*m
-k = 5;
+T=100;
+k=100;
 [m,d]=size(X);
 
 idx=randperm(m);
