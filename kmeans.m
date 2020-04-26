@@ -1,5 +1,6 @@
-function [c,labels] = kmeans(X, k, T)
-
+function [c,labels] = kmeans(X, T, Ytrain)
+%  Ytrain is 1*m
+k = 5;
 [m,d]=size(X);
 
 idx=randperm(m);
@@ -30,6 +31,12 @@ for iter=1:T
     for i=1:k
         c(i,:)=mean(X(cluster==i,:));
     end  
+end
+cluster(2,:)=Ytrain;
+cluster(2,:)=[ones(1,10000),2*ones(1,10000),3*ones(1,10000),4*ones(1,10000)...
+    5*ones(1,10000),ones(1,10000)];
+for center = 1:k
+    labels(center)=mode(cluster(2,find(cluster(1,:)==k)));
 end
 
 end
