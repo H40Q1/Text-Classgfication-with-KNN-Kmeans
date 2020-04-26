@@ -1,6 +1,6 @@
 
 
-function [accuracy] = knn(k,data,labels,t_data,t_labels)
+function [accuracy,ypred] = knn(k,data,labels,t_data,t_labels)
 %KNN_: classifying using k-nearest neighbors algorithm. The nearest neighbors
 %search method is euclidean distance
 
@@ -17,7 +17,6 @@ function [accuracy] = knn(k,data,labels,t_data,t_labels)
 %Output:
 %       - predicted_labels: the predicted labels based on the k-NN
 %       algorithm
-%       - nn_index: the index of the nearest training data point for each training sample (Mx1).
 %       - accuracy: if the testing labels are supported, the accuracy of
 %       the classification is returned, otherwise it will be zero.
 
@@ -53,7 +52,6 @@ for i=1:size(k_nn,1)
     end
     predicted_labels(i)=max_label;
 end
-
 
 
 %calculate the classification
