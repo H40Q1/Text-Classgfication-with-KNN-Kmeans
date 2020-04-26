@@ -1,6 +1,6 @@
 
 
-function [accuracy,ypred] = knn(k,data,labels,t_data,t_labels)
+function [accuracy] = knn(k,data,labels,t_data,t_labels)
 %KNN_: classifying using k-nearest neighbors algorithm. The nearest neighbors
 %search method is euclidean distance
 
