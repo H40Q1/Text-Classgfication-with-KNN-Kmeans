@@ -34,10 +34,8 @@ for iter=1:T
     end  
 end
 cluster(2,:)=Ytrain;
-cluster(2,:)=[ones(1,10000),2*ones(1,10000),3*ones(1,10000),4*ones(1,10000)...
-    5*ones(1,10000),ones(1,10000)];
 for center = 1:k
-    labels(center)=mode(cluster(2,find(cluster(1,:)==k)));
+    labels(center)=mode(cluster(2,find(cluster(1,:)==center)));
 end
 
 end
