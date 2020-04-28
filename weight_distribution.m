@@ -32,5 +32,20 @@ end
 All_counted = [business entertainment politics sports tech];
 %% Adjust the weights
 bag = join(bag);
-weight_distr = tfidf(bag);
-weight_distr = full(weight_distribution);
+weight_d = tfidf(bag);
+weight_d = full(weight_d);
+y = zeros(1500,1);
+y(1:300,1) = 1;
+y(301:600,1) = 2;
+y(601:900,1) = 3;
+y(901:1200,1) = 4;
+y(1201:1500,1) = 5;
+shuffle = randperm(1500)';
+for i = 1:1200
+    X_tr(i,1:39) = weight_d(shuffle(i),:);
+    Y_tr(i,1) = y(shuffle(i),1);
+end
+for j = 1201:1500
+    X_te(j-1200,1:39) = weight_d(shuffle(j),:);
+    Y_te(j-1200,1) = y(shuffle(j),1);
+end
