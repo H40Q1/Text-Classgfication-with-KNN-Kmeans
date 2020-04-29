@@ -1,7 +1,7 @@
 function [c,labels] = kmeans(X, Ytrain)
 %  Ytrain is 1*m
-T=100;
-k=100;
+T=300;
+k=150;
 [m,d]=size(X);
 
 idx=randperm(m);
@@ -34,6 +34,7 @@ for iter=1:T
     end  
 end
 cluster(2,:)=Ytrain;
+
 for center = 1:k
     labels(center)=mode(cluster(2,find(cluster(1,:)==center)));
 end

@@ -5,8 +5,7 @@ function [acc]=cross_validation(Xtr,Ytr,k)
     m=size(Xtr,1);
 %     errs=zeros(1,4);
     
-    % cluster into 100 centers
-    num_center=100;
+
     
     % 4-folder
     for j=1:4

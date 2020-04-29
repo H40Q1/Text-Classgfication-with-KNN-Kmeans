@@ -7,11 +7,10 @@ close all
 
 %load data
 
-load X_tr
-load Y_tr
+load x1
+load y1
 
-Xtr=X_tr;
-Ytr=Y_tr;
+
 
 %potential k parameter choices
 k_vec=[1,2,3,4,5,6,7,8,9];
