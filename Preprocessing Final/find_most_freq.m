@@ -21,5 +21,5 @@ function [most_freq,bag] = find_most_freq(all_category_data,index)
     % Initialize the bag of words
     bag = bagOfWords(tokenized_news);
     % Return the most 10 frequenct words
-    most_freq = topkwords(bag,10);
+    most_freq = topkwords(bag,70);
 end
