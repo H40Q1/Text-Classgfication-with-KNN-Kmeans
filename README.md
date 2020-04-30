@@ -29,6 +29,7 @@
     * TF: Term weighting based on the words frequency that appear in a document. 
     * IDF: Weighting method based on number of words that appear throughout all the documents.
  * You can understand the intuition behind the method with the formula given down below.
+ 
     <img width="295" alt="WeChat Image_20200427211527" src="https://user-images.githubusercontent.com/55101879/80670978-7f048c80-8a76-11ea-9bae-0075de64e511.png">
 
 * After re-weighting the documents we get four matrices that our crucial to our ML model.
