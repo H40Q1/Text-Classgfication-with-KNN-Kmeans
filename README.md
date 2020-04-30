@@ -20,9 +20,7 @@
   
  * Use a bag of words model to find the most frequent 10 words for each category, total 50 words. Then select each unique word to determine the feature words. 
 
-* The word list contains most frequent 10 words in each category total of 50 words. After we select the unique words we get 38 feature words. 
-
-* You can see the categories, most frequent words and their corresponding labels in the table.
+* The Word_list.mat file contains Most frequent words for each category that can be seen from the table.
 
     * <img width="644" alt="table" src="https://user-images.githubusercontent.com/55101879/80283559-69920a00-86e6-11ea-814a-9e25e5b52acd.png">
 
