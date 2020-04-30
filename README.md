@@ -13,11 +13,18 @@
 * We split the whole dataset by 8:2 ratio. That makes 1200 news for Train and 300 news for Test.
 ## Preprocessing
 * In order to make use of raw text documents, we have to preproces them. Our preprocessing steps are:
-  * Case Folding: 
-  * Tokenizing:
-  * Filtering:
-  * Lemmatisation:
-### Words_list.mat
-The word list contains most frequent 10 words in each category total of 50 words.
+  * Case Folding: Changing letters to lowercases and getting rid of any special characters.
+  * Tokenizing: The process of reducing the text into it's individual.
+  * Filtering: Dispose conjunction words and unnecessary words such as 'am','is','are', that doesn't give us any information about category labels.
+  * Lemmatisation: This is a tecnique for reducing the words onto their root form. 
+  
+ * Use a bag of words model to find the most frequent 10 words for each category, total 50 words. Then select each unique word to determine the feature words. 
 
-<img width="644" alt="table" src="https://user-images.githubusercontent.com/55101879/80283559-69920a00-86e6-11ea-814a-9e25e5b52acd.png">
+* The word list contains most frequent 10 words in each category total of 50 words. After we select the unique words we get 38 feature words. 
+
+* You can see the categories, most frequent words and their corresponding labels in the table.
+
+    * <img width="644" alt="table" src="https://user-images.githubusercontent.com/55101879/80283559-69920a00-86e6-11ea-814a-9e25e5b52acd.png">
+
+ ## Term-Weighting
+ * 
