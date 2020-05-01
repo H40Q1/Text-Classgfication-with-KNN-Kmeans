@@ -37,3 +37,9 @@
     * Xte: Test set that contains weights of  300 news / 300x38 Matrix
     * Ytr: Train labels of the weights that corresponds to the news category / 1200x1 Matrix
     * Yte: Test labels of the weights that corresponds to the news category / 300x1 Matrix
+
+ ## Obtain centroids by K-means
+One key point of our project is to reduce the high computation complexity of KNN, which is highly related to the size of the training set. As a result, we use 100 centroids to represent the whole training set. The way we cluster 1200 training samples is using K-means, in which we set K to be 100.
+
+After 400 iterations or canvergence, we set the label of a single centroid based on the dominant labels in its cluster. For example, if there are 9 samples in a cluster, and 8 of them are Tech news, this cluster will be labeled as Tech news. The 100 centroids will be our final training set.
+
