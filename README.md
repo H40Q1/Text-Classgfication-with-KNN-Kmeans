@@ -18,7 +18,7 @@
   * Filtering: Dispose conjunction words and unnecessary words such as 'am','is','are', that doesn't give us any information about category labels.
   * Lemmatisation: This is a technique for reducing the words onto their root form. 
   
- * Use a bag of words model to find the most frequent 10 words for each category, total 50 words. Then select each unique word to determine the feature words. 
+ * Use a bag of words model to find the most frequent 70 words for each category, total 350 words. Then select each unique word to determine the feature words. 
 
 * The Word_list.mat file contains Most frequent words for each category that can be seen from the table.
 
@@ -33,8 +33,8 @@
     <img width="295" alt="WeChat Image_20200427211527" src="https://user-images.githubusercontent.com/55101879/80670978-7f048c80-8a76-11ea-9bae-0075de64e511.png">
 
 * After re-weighting the documents we get four matrices that are crucial to our ML model.
-    * Xtr: Train set that contains weights of 1200 news / 1200x38 Matrix
-    * Xte: Test set that contains weights of  300 news / 300x38 Matrix
+    * Xtr: Train set that contains weights of 1200 news / 1200x228 Matrix
+    * Xte: Test set that contains weights of  300 news / 300x228 Matrix
     * Ytr: Train labels of the weights that corresponds to the news category / 1200x1 Matrix
     * Yte: Test labels of the weights that corresponds to the news category / 300x1 Matrix
 
